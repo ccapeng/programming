@@ -1,11 +1,6 @@
 # String
 
 Some of the basic string methods you must famililar with in your programming languages.
-
-* Regular Expression
-  * For pattern match.
-  * String replacement.
-  * For example : remove line break.
   
 * Position, Index, Search 
   * Beginning of character.
@@ -99,3 +94,10 @@ Some of the basic string methods you must famililar with in your programming lan
   
 * To uppercase, lowercase.
   * Most use in case insensitive search pattern match and case insensitive search order.
+
+	
+* Regular Expression
+  * For pattern match.
+  * String replacement.
+  * For example : remove line break.
+	* [Online regular expression match](https://www.debuggex.com/)
