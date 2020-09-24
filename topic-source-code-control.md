@@ -17,6 +17,7 @@ Use Github as practice
 
 2. Understanding 
 
+	- [Concept](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 	- Fetch 
 	- Diff 
 	- Branch 
