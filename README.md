@@ -1,5 +1,3 @@
-<article style="font-size:1.25rem">
-
 # Best Practice of Programming
 
 ## Goals
@@ -25,4 +23,3 @@ Also introduce some modern trends and understand to improve your efficient.
 
 
 >>alex at ccapeng@gmail.com | [ccapeng.github.io/bio](https://ccapeng.github.io/bio)
-</article>
