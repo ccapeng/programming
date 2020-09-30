@@ -9,7 +9,7 @@ Through these articles and practices, I hope the readers can enhance his/her com
 
 Also introduce some modern trends and understand to improve your efficient.
 
-## Practices
+## Exercise
 
 - [String](exercise-string-parsing)
 - [Json Data](topic-dataexercise-json-data.md)
@@ -22,4 +22,4 @@ Also introduce some modern trends and understand to improve your efficient.
 
 
 
-`alex at ccapeng@gmail.com | [ccapeng.github.io/bio](https://ccapeng.github.io/bio)`
+`alex at ccapeng@gmail.com | [ccapeng.github.io](https://ccapeng.github.io/)`
