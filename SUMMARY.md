@@ -1,6 +1,6 @@
 # Table of contents
 
-- [Preface](README.md)
+- [Best Practice of Programming](README.md)
 - [String](topic-string.md)
   - [Exercise String](exercise/exercise-string-parsing.md)
 - [Operators](topic-operator.md)
