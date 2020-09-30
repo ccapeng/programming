@@ -30,6 +30,13 @@
 
 ## RESTful
 - Isomorphic
+- Methods
+	- GET
+	- PPOST
+	- PUT
+	- PATCH
+	- DELETE
+	- OPTIONS : Surprised, you may not see this method in the REST methods, but actually browsers use it.
 	
 ## Tools
 
@@ -42,5 +49,3 @@
 - Django quick tour(https://rayed.com/posts/2018/05/django-crud-create-retrieve-update-delete/)
 
 - Full Stack React & Django(https://www.youtube.com/watch?v=Uyei2iDA4Hs&t=31s)
-
--

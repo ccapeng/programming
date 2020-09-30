@@ -1,13 +1,20 @@
 # Looping
 
-* for
-	* for(), for item in items
-	* sugar function for array : filter(), foreach(), reduce(), map()
+- for
+	- for(), for item in items
+	- javascript high order function : filter(), foreach(), reduce(), map()
 
-* while
-	* By condition
+- while
+	- By condition
 
-* Recursive
-	* Just the same function again and again
+- Recursive
+	- Just the same function again and again
 
-* python generator
+- Generator
+
+	- Reactive Programming
+	
+	- Python
+	
+	- Javascript
+	

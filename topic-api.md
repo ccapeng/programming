@@ -19,9 +19,14 @@
 	
 - Avoid to have number in the function/method name
 
+- Module
+	- Just follow the others.  
+		Most of package/module naming already have general practice.
+	- Or if you want to classify your modules, just base on your visual of layers and groups. 
 
 ## Documentation
 - markdown : for README and pure documentation.
+	README.md is the general practice of your github project.
 
 - API document
 	- javadoc

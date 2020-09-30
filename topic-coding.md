@@ -20,7 +20,7 @@
 		```
 		When you have complicated codes, it's easy to be confused with those two names.
 		
-		You need to explicit what each variable for.
+		You need to explicit what each variable for and to name them equivalent weight.
 		For example:
 		```
 		var elementCounter = 0;
@@ -58,23 +58,34 @@
 	- When a variable is to hold a collection, then name it with Plural.
 	
 		For examples :
-		```
-		var books = getBooks()
-		```
-		or name it as list or array
-		```
-		var bookList = getBookList()
-		```
+		
+		1. Plural 
+			```
+			var books = getBooks()
+			```
+		
+		2. List, Array
+			```
+			var bookList = getBookList()
+			```
+		
+		It's to recommend to use 2.  
+		- You want to get away `getBook()` and `getBooks()` typo.
+		- You want to get away the irregular plural,  
+			like `getCategory()` and `getCategories()`
 
 - Global variable
 	- Unless global constant, avoid to use that.
-	- Be careful multiple thread
+	- Be careful multiple threads.
 
 - Typo
 	- It's your foe and friend.
 	- Turn on your spellChecker.
 		- In VS code, [code spell checked](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) can check all words spelling, included camel case and snake case.
 	- Read again after typing.
+	- In the VSCode, just get used to intelliSense.  
+		It's your code hint and pick the variable from the dropdown.  
+		If not in there, you may have typo.
 	
 ## Block
 
