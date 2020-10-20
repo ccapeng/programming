@@ -135,9 +135,41 @@
 - Indentation
 	- Tab / Space Consistency
 		- My favor : two spaces for a tab key.
+		- I consider this is most important when coding.
 	- For Python, follow PEP8 style guide
 	- For IDE, please apply lint.
 	
+## Comment
+- Function : write a description and explain all parameters. 
+	If you have very obvious name, you can skip it, but some IDE just force to write it.
+- Inside code:
+	``` python
+	def get_second_high_number(arr):
+			''' Get the second large number '''
+			# Sort unique list with set
+			sorted_set = set(arr)
+			# Convert set back to list
+			sorted_arr = list(sorted_set)
+			# Get the last second number as second high number
+			second_high_number = sorted_arr[-2]
+			return second_high_number
+	```
+	Looking great or something wrong?  
+	
+	How about regroup comments like this
+	``` python
+	def get_second_high_number(arr):
+			''' Get the second large number '''
+			# Sort unique list with set(sorted_set)
+			# Convert set back list (sorted_arr)
+			# Get the last second number as second high number (second_high_number)
+			sorted_set = set(arr)
+			sorted_arr = list(sorted_set)
+			second_high_number = sorted_arr[-2]
+			return second_high_number
+	```
+	A little bit verbose, but got logic connected.
+
 ## Brain Melting Coding
 - With sugar syntax, condense multiple line codes into one line.
 	- Make you look smart.
@@ -147,11 +179,8 @@
 - This is a balance between better coding and easy understanding.
 
 - The Rule of thumbnail to use that:
-	- As long as you can keep the code 
-		- nature
-		- short enough 
-		- easy to read
-	
+	- Debugger can make a stop to this single value 
+	- Necessary modern language trend.
 	
 ## Best practice
 
