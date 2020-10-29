@@ -1,28 +1,28 @@
 # Coding
 
-## Coding style
-- Naming convention
-	- Consistency of camel case/snake case.
-		- Camel case : `myFunction`
-		- Snake case : `my_function`
-	- What is your team standard?
-	- For python, you must follow `PEP8`
-	- For GO, it's just build-in.
+## Case style
+- Consistency of case styles.
+	- camelCase : `myFunction`
+	- snake_case : `my_function`
+	- PascalCase : `MyFunction`
+- What is your team standard?
+- For python, you must follow `PEP8`
+- For GO, it's just built-in.
 	
 ## Variable
 - Variable name
 	- Naming is important. Ambiguous naming is costly. Your may eventually confuse by them.
 		
 		For example:
-		```
+		``` javascript
 		var counter = 0;
 		var processCounter = 0;
 		```
-		When you have complicated codes, it's easy to be confused with those two names.
+		When you have complicated codes, it's easy to be confused with those two names.  
 		
 		You need to explicit what each variable for and to name them equivalent weight.
 		For example:
-		```
+		``` javascript
 		var elementCounter = 0;
 		var processCounter = 0;
 		```
@@ -32,13 +32,13 @@
 - Variable verbose
 	For example :
 	Good
-	```
+	``` python
 	key = "hello"
 	value = "world"
 	call(key, value)
 	```
 	No Good
-	```
+	``` python
 	call("hello", "value")
 	```
 	
@@ -60,12 +60,12 @@
 		For examples :
 		
 		1. Plural 
-			```
+			``` javascript
 			var books = getBooks()
 			```
 		
 		2. List, Array
-			```
+			``` javascript
 			var bookList = getBookList()
 			```
 		
@@ -121,11 +121,11 @@
 	- {} () match
 		
 		Use 
-		```
+		``` javascript
 		if (a > b) {
 			a++;
 		}
-		```
+		``` javascript
 		not in shorter
 		```
 		if (a > b) a++;
@@ -142,7 +142,7 @@
 ## Comment
 - Function : write a description and explain all parameters. 
 	If you have very obvious name, you can skip it, but some IDE just force to write it.
-- Inside code:
+- Inside code:  
 	``` python
 	def get_second_high_number(arr):
 			''' Get the second large number '''
@@ -150,11 +150,14 @@
 			sorted_set = set(arr)
 			# Convert set back to list
 			sorted_arr = list(sorted_set)
-			# Get the last second number as second high number
-			second_high_number = sorted_arr[-2]
+			second_high_number = 0
+			#check if array is more than one item
+			if len(sorted_arr) > 1:
+				# Get the last second number as second high number
+				second_high_number = sorted_arr[-2]
 			return second_high_number
 	```
-	Looking great or something wrong?  
+	Looking good or something wrong?  
 	
 	How about regroup comments like this
 	``` python
@@ -165,10 +168,17 @@
 			# Get the last second number as second high number (second_high_number)
 			sorted_set = set(arr)
 			sorted_arr = list(sorted_set)
-			second_high_number = sorted_arr[-2]
+			second_high_number = 0
+			if len(sorted_arr) > 1: #check if array is more than one item
+				second_high_number = sorted_arr[-2]
 			return second_high_number
 	```
-	A little bit verbose, but got logic connected.
+	Try to got logic connected.  
+	
+	Actually, it's not really to have such verbose comments if you can all of variable naming clear. 
+
+- TODO:  
+	Add `TODO` comment if need further polish.
 
 ## Brain Melting Coding
 - With sugar syntax, condense multiple line codes into one line.
