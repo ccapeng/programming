@@ -79,7 +79,7 @@
 		
 	- Clustering crash: In a clustering system, one server crash, then all traffic was bounced to next server. And another server crash, traffic bouncing again. Meanwhile, the early on crashed server was restarted. Eventual to the point of whole system failure.  
 		How to fix it?  
-		- Make sure system have good space : good storage, powful enough memory.
+		- Make sure system have good space : enough storage and memory.
 		- Next check the log to see where is the chocking point. This is hard nut to crack.
 
 	

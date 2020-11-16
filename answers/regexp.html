@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Hellow World</title>
+</head>
+<body>
+<main id="main">
+  Hi {invitee}, <br><br>
+  Please come to {event} at {time}.<br><br>
+  From {name}
+</main>
+<script>
+var data = 
+{
+  "invitee":"John",
+  "event":"library",
+  "time":"Tomorrow 11 AM",
+  "name":"Alex"
+}
+
+function matchVariables() {
+  var s = document.querySelector("#main").innerHTML;
+  var regex = /{(.+?)}/g
+  var allMatches = []
+  var matches = [];
+  while (matches = regex.exec(s)) {
+    allMatches[matches[0]]=matches[1];
+  }
+console.log("allMatches", allMatches);
+}
+
+function replaceVariables() {
+  var s = document.querySelector("#main").innerHTML;
+console.log("s",s);
+  var s2 = s.replace(/{(.+?)}/g, function(match, offset) {
+console.log("match:", match, "offset:", offset);
+    return data[offset]
+  });
+console.log("s2", s2);
+  document.querySelector("#main").innerHTML = s2;
+}
+
+matchVariables();
+replaceVariables();
+</script>
+</body>
+</html>
