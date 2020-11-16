@@ -18,7 +18,7 @@
 		var counter = 0;
 		var processCounter = 0;
 		```
-		When you have complicated codes, it's easy to be confused with those two names.  
+		When you have complicated codes, it's easy to get confused with those two names.  
 		
 		You need to explicit what each variable for and to name them equivalent weight.
 		For example:
@@ -37,7 +37,11 @@
 	value = "world"
 	call(key, value)
 	```
-	No Good
+	- Clear variables definition.
+	- Easy to understand and maintain. 
+	- Easy to debug.
+	
+	Not wrong, but no Good.
 	``` python
 	call("hello", "value")
 	```
@@ -49,9 +53,13 @@
 	
 	}
 	```
-	It's no good to be a variable inside a function.
+	It's no good to be a variable which is implicit.
 	``` javascript
 	var i = "hello".indexOf("l");
+	```
+	Try this way :
+	``` javascript
+	var idx = "hello".indexOf("l");
 	```
 	
 - Singular or Plural
@@ -85,8 +93,9 @@
 	- Read again after typing.
 	- In the VSCode, just get used to intelliSense.  
 		It's your code hint and pick the variable from the dropdown.  
-		If not in there, you may have typo.
-	
+		If not in there, you have typo.
+
+
 ## Block
 
 - Code block
@@ -115,22 +124,31 @@
 		```
 		call(arg1, arg2, arg3, arg4, ...)
 		```
-		You read code from top down with logic connected, not scrolling left right to trace your logic.
+		- You read code from top down with logic connected, not scrolling left right to trace your logic.
+		- The same rule apply to chaining function.
 		
+	- Function/Block
+		- Define the variable in the beginning.
+		- Return the result at the end.
+		- Logic in the middle.
+		
+	- End of line
+		- In the javascript, always put ";" at the end of line.
+	
 - Bracket match
 	- {} () match
-		
 		Use 
 		``` javascript
 		if (a > b) {
 			a++;
 		}
-		``` javascript
-		not in shorter
+		``` 
+		
+		Not in shorter
 		```
 		if (a > b) a++;
 		```
-		The bracket symbols may get your codes more verbose, but more organized.
+		The paired bracket symbols may get your codes more verbose, but more organized.
 		
 - Indentation
 	- Tab / Space Consistency
@@ -141,7 +159,8 @@
 	
 ## Comment
 - Function : write a description and explain all parameters. 
-	If you have very obvious name, you can skip it, but some IDE just force to write it.
+	- If you have very obvious name, still put one line function.
+		In the future, you may ask for to delivery document, then you are happy to go.
 - Inside code:  
 	``` python
 	def get_second_high_number(arr):
@@ -191,6 +210,7 @@
 - The Rule of thumbnail to use that:
 	- Debugger can make a stop to this single value 
 	- Necessary modern language trend.
+	- Good code structure.
 	
 ## Best practice
 
