@@ -14,13 +14,15 @@
 		```
 		Make sure no index out of range error.
 		
-	
 - High order function
 	- javascript  : filter(), foreach(), reduce(), map()
+		- Some of js high order functions can be hard to read.
+		
 	- The difference between `for` loop and high order function.
 		For the number calculation, they should be same.  
 		But for the DOM manipulation, use high order function.  
-		You need to understand javascript disclosure.
+		You need to understand javascript closure.
+	
 
 - while
 	- By condition
@@ -82,4 +84,14 @@
 		- Make sure system have good space : enough storage and memory.
 		- Next check the log to see where is the chocking point. This is hard nut to crack.
 
-	
+- Dynamic Programming
+	- Actually, this is an advanced topic.
+	- In order to get better performance, simplify recursive by solving sub problem first.
+	- [Knapsack challenge](topic-dynamic-programming.md)
+	- Closure or for loop?
+		- In Python : 
+			Sample : [fib.py](fib.py)
+		- In node.js : 
+			Sample : [fib.js](fib.js)
+		- Both js/python samples are in the same logic flow.  
+			In here, loop has better performance than closure.
