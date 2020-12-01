@@ -94,4 +94,8 @@
 		- In node.js : 
 			Sample : [fib.js](fib.js)
 		- Both js/python samples are in the same logic flow.  
-			In here, loop has better performance than closure.
+			In here, `loop` has better performance than `closure`.  
+		- The `loop` in here is a dynamic programming memorization implementation.  
+			And, it is to be more efficient.
+		- However, in every `closure` a private scope of states are involved.
+			And, it is little bit of complication.

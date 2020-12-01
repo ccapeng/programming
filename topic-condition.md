@@ -22,7 +22,7 @@ In this section, all the methodologies are just for best practice. That's for mo
 	```
 	Also, remember to have curly brace, don't omit them even only line of statement.
 	
-- Use straight logic
+- Use straight forward logic
 	``` python
 	if x is not None:
 	```

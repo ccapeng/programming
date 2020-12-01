@@ -5,6 +5,8 @@ Just list common use symbols in here.
 ## Plus Sign `+`, `++`
 
 - The difference between `i++`, `++i`
+- Python do not have `++`.
+- In python, you can have `+` operator by implementing the class `__add__` method.
 
 ## Vertical Bar `|`, `||`
 
@@ -20,13 +22,25 @@ Just list common use symbols in here.
 
 ## [Regular expression](https://regexr.com/)
 
-1. `^`
-2. `$`
-3. `.`
-4. `+`
-5. `*`
-6. `\`
-7. `?`
+- Metacharacter and Quantification
+	- `^`
+	- `$`
+	- `.`
+	- `+`
+	- `*`
+	- `\`
+	- `?`
+- Understanding `match()` and match groups
+- Look ahead
+	- Good use in number of character password validation.
+	- Also negative look ahead, look behind, negative look behind.
+- Match into dictionary.
+
+- You don't really use regular expression constantly.
+	- Recommendation to have another text search base test.
+	
+
+
 
 ## The bitwise and shift operator
 - It's brain melting operators.

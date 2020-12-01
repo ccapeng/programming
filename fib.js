@@ -24,7 +24,7 @@ function fib(n) {
 function fibClosure(n) {
   function _fib() {
     let a = 0, b = 1, c = 0;
-    return function fib() {
+    return function() {
       c = a + b;
       a = b;
       b = c;
