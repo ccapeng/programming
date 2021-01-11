@@ -9,16 +9,28 @@ Through these articles and practices, I hope the readers can enhance his/her com
 
 Also introduce some modern trends and understand to improve your efficient.
 
-## Exercise
+## Index
 
-- [String](exercise-string-parsing)
-- [Json Data](topic-dataexercise-json-data.md)
-- [Array](topic-data/exercise-array.md)
-- [Web](topic-web/exercis-django.md)
+- [String](topic-string.md)
+  - [Exercise String](exercise/exercise-string-parsing.md)
+- [Operators](topic-operator.md)
+- [Condition](topic-condition.md)
+- [Loop](topic-looping.md)
+- [Data](topic-data.md)
+  - [Exercise JSON Data](exercise/exercise-json-data.md)
+  - [Array](exercise/exercise-array.md)
+- [Coding](topic-coding.md)
+- [API](topic-api.md)
+- [Source Code Control](topic-source-code-control.md)
+- [IDE](topic-ide.md)
+- [Httpd and Web](topic-web.md)
+  - [Exercise django](exercise/exercise-django.md)
 
-## Who should read these articles?
+
+## Who Should Read These Articles?
 - This document is to be a guideline of entry level programmers.
 - Also welcome the senior mentors to take these articles and add your ingredients to become your guideline.
+
 
 
 

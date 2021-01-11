@@ -11,7 +11,8 @@
 	
 ## Variable
 - Variable name
-	- Naming is important. Ambiguous naming is costly. Your may eventually confuse by them.
+	- No ambiguous naming.  
+		To avoid naming confusion, give a equal weight in the same group.
 		
 		For example:
 		``` javascript
@@ -27,7 +28,27 @@
 		var processCounter = 0;
 		```
 		
-	- Make your model clean, give each model a distinguish name.
+		Make your model clear(object/table), give each model a distinguish name.  
+		
+	
+	- Naming consistency.  
+	
+		When abbr is used in the variable name :  
+		For example:
+		``` javascript
+		var prev = 0;
+		var cur = 0;
+		```
+
+		It's better to name them in the same length.  
+		For example:
+		``` javascript
+		var prev = 0;
+		var curr = 0;
+		```
+
+		Better house keeping, easy to maintain and easy to read.  
+
 	
 - Variable verbose
 	For example :
@@ -81,6 +102,63 @@
 		- You want to get away `getBook()` and `getBooks()` typo.
 		- You want to get away the irregular plural,  
 			like `getCategory()` and `getCategories()`
+
+- Use variable or not?  
+	In [triplet count python code](https://www.hackerrank.com/challenges/count-triplets-1/forum?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps), there are 3 of  `i*r`  
+		
+	``` python
+	def count_triplets(arr, r):
+			count = 0
+			dict = {}
+			dictPairs = {}
+
+			for i in reversed(arr):
+					if i*r in dictPairs:
+									count += dictPairs[i*r]
+					if i*r in dict:
+									dictPairs[i] = dictPairs.get(i, 0) + dict[i*r]
+
+					dict[i] = dict.get(i, 0) + 1
+
+			return count
+	```
+	
+	Let's just give a variable for it
+	``` python
+	def count_triplets_3(arr, r):
+			count = 0
+			dict = {}
+			dictPairs = {}
+
+			for i in reversed(arr):
+					prod = i*r
+					if prod in dictPairs:
+									count += dictPairs[prod]
+					if prod in dict:
+									dictPairs[i] = dictPairs.get(i, 0) + dict[prod]
+
+					dict[i] = dict.get(i, 0) + 1
+
+			return count
+	```
+	It's worthy to give a varible for it?  
+	Let's take a look at the performance at 1000000.  
+	```
+	d:\dvp\python\hackerrank>python src\count_triplets.py
+	count_triplets  : 0:00:02.621734
+	count_triplets_3: 0:00:02.252786
+
+	d:\dvp\python\hackerrank>python src\count_triplets.py
+	count_triplets  : 0:00:02.626448
+	count_triplets_3: 0:00:02.250635
+
+	d:\dvp\python\hackerrank>python src\count_triplets.py
+	count_triplets  : 0:00:02.632636
+	count_triplets_3: 0:00:02.246863
+	```
+	The change has better performance in a long run. That can be arguable if without extensive looping.  
+	To avoid compute the same thing again, should have a variable for this.
+
 
 - Global variable
 	- Unless global constant, avoid to use that.
