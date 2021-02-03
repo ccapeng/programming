@@ -1,11 +1,11 @@
 # Table of contents
 
 - [Best Practice of Programming](README.md)
-- [String](topic-string.md)
-  - [Exercise String](exercise/exercise-string-parsing.md)
-- [Operators](topic-operator.md)
-- [Condition](topic-condition.md)
-- [Loop](topic-looping.md)
+- [Language Fundamental](topic-fundamental.md)
+  - [String](topic-string.md)
+  - [Operators](topic-operator.md)
+  - [Condition](topic-condition.md)
+  - [Loop](topic-looping.md)
 - [Data](topic-data.md)
   - [Exercise JSON Data](exercise/exercise-json-data.md)
   - [Array](exercise/exercise-array.md)

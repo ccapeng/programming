@@ -10,12 +10,11 @@ Through these articles and practices, I hope the readers can enhance his/her com
 Also introduce some modern trends and understand to improve your efficient.
 
 ## Index
-
-- [String](topic-string.md)
-  - [Exercise String](exercise/exercise-string-parsing.md)
-- [Operators](topic-operator.md)
-- [Condition](topic-condition.md)
-- [Loop](topic-looping.md)
+- [Language Fundamental](topic-fundamental.md)
+  - [String](topic-string.md)
+  - [Operators](topic-operator.md)
+  - [Condition](topic-condition.md)
+  - [Loop](topic-looping.md)
 - [Data](topic-data.md)
   - [Exercise JSON Data](exercise/exercise-json-data.md)
   - [Array](exercise/exercise-array.md)

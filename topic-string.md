@@ -1,6 +1,6 @@
 # String
 
-Some of the basic string methods you must famililar with in your programming languages.
+Some of the basic string methods you must familiar with in your programming languages.
   
 * Position, Index, Search 
   * Beginning of character.
